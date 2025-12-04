@@ -1,0 +1,149 @@
+.section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background-color: var(--bg-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.subheading {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xl);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* The vertical line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, var(--accent-purple), transparent);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: var(--bg-primary);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: 24px;
+    z-index: 1;
+    right: -8px;
+    box-shadow: 0 0 10px var(--accent-purple);
+    transition: all 0.3s ease;
+}
+
+.right .dot {
+    left: -8px;
+}
+
+.container:hover .dot {
+    background-color: var(--accent-purple);
+    transform: scale(1.2);
+}
+
+.content {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-purple);
+    box-shadow: 0 0 30px rgba(189, 0, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    display: block;
+    font-family: var(--font-geist-mono);
+}
+
+.date span {
+    color: var(--accent-purple);
+}
+
+.description {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        left: 0;
+    }
+
+    .dot {
+        left: 23px;
+        right: auto;
+    }
+
+    .right .dot {
+        left: 23px;
+    }
+}

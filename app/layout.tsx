@@ -18,6 +18,9 @@ export const metadata: Metadata = {
 };
 
 import Navbar from "../components/Navbar";
+import ClickSpark from "@/components/effects/mouse_spark";
+
+import SmoothScroll from "@/components/SmoothScroll";
 
 export default function RootLayout({
   children,
@@ -29,8 +32,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable}`}
       >
-        <Navbar />
-        {children}
+        <SmoothScroll>
+          <Navbar />
+          <ClickSpark
+            sparkColor='#fff'
+            sparkSize={10}
+            sparkRadius={15}
+            sparkCount={8}
+            duration={400}
+          >
+            {children}
+          </ClickSpark>
+        </SmoothScroll>
       </body>
     </html>
   );

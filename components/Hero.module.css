@@ -1,12 +1,12 @@
 .hero {
-    position: relative;
     height: 100dvh;
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: radial-gradient(circle at center, #1a1a1a 0%, var(--bg-primary) 70%);
+    /* background: radial-gradient(circle at center, #1a1a1a 0%, var(--bg-primary) 70%); */
 }
 
 .content {

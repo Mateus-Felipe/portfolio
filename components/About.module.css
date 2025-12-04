@@ -1,0 +1,120 @@
+.section {
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.sectionPadding {
+    padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+    position: relative;
+    z-index: 2;
+}
+
+.imageContainer {
+    flex: 1;
+    position: relative;
+}
+
+.profileFrame {
+    width: 100%;
+    aspect-ratio: 1;
+    border: 1px solid var(--accent-cyan);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 243, 255, 0.02);
+}
+
+.profileFrame::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid var(--accent-cyan);
+    border-left: 2px solid var(--accent-cyan);
+}
+
+.profileFrame::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid var(--accent-cyan);
+    border-right: 2px solid var(--accent-cyan);
+}
+
+.glitchText {
+    font-family: var(--font-geist-mono);
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    z-index: -1;
+    white-space: nowrap;
+}
+
+.content {
+    flex: 1;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+    background: linear-gradient(to right, #fff, #a1a1aa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.bio {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.statGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.statItem {
+    background: rgba(255, 255, 255, 0.03);
+    padding: var(--spacing-md);
+    border-left: 2px solid var(--accent-purple);
+    backdrop-filter: blur(2px);
+}
+
+.statValue {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.statLabel {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-family: var(--font-geist-mono);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
