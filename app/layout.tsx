@@ -22,6 +22,7 @@ import Navbar from "../components/Navbar";
 import ClickSpark from "@/components/effects/mouse_spark";
 
 import SmoothScroll from "@/components/SmoothScroll";
+import SplashScreen from "@/components/SplashScreen";
 
 export default function RootLayout({
   children,
@@ -36,6 +37,7 @@ export default function RootLayout({
         <LanguageProvider>
           <SmoothScroll>
             <Navbar />
+            <SplashScreen />
             <ClickSpark
               sparkColor='#fff'
               sparkSize={10}
