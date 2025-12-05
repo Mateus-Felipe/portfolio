@@ -1,8 +1,8 @@
 .section {
     background-color: #000;
-    position: relative;
     overflow: hidden;
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
 }
 
 .sectionPadding {
@@ -22,6 +22,7 @@
 .imageContainer {
     flex: 1;
     position: relative;
+    width: 100%;
 }
 
 .profileFrame {
