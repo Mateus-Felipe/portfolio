@@ -1,7 +1,9 @@
 "use client"
 import styles from './Navbar.module.css';
-
 import { useLanguage } from '../context/LanguageContext';
+import euaFlag from "../public/eua-flag.png"
+import brFlag from "../public/brazil-flag.png"
+import Image from 'next/image';
 
 export default function Navbar() {
     const { t, language, setLanguage } = useLanguage();
@@ -41,14 +43,18 @@ export default function Navbar() {
                             className={`${styles.languageOption} ${language === 'en' ? styles.activeLang : ''}`}
                             onClick={() => toggleLanguage('en')}
                         >
-                            <span className={styles.flag}>🇺🇸</span>
+                            <span className={styles.flag}>
+                                <Image src={euaFlag} alt="EUA Flag" style={{ width: '30px', height: '20px' }} />
+                            </span>
                             English
                         </button>
                         <button
                             className={`${styles.languageOption} ${language === 'pt-br' ? styles.activeLang : ''}`}
                             onClick={() => toggleLanguage('pt-br')}
                         >
-                            <span className={styles.flag}>🇧🇷</span>
+                            <span className={styles.flag}>
+                                <Image src={brFlag} alt="BR Flag" style={{ width: '30px', height: '20px' }} />
+                            </span>
                             Português
                         </button>
                     </div>
