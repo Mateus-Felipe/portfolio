@@ -67,13 +67,13 @@ export default function Education() {
                         <div className={styles.degreeIcon}>
                             🎓
                         </div>
-                        <h3 className={styles.degreeTitle}>B.S. Computer Science</h3>
-                        <div className={styles.degreeSchool}>University of Technology</div>
-                        <div className={styles.degreeYear}>2018 - 2022</div>
+                        <h3 className={styles.degreeTitle}>Faculdade <i>Aprendi na Marra</i></h3>
+                        <div className={styles.degreeSchool}>Mas irei cursar Ciências da Computação</div>
+                        <div className={styles.degreeYear}>2019 - 2025+</div>
                         <p className={styles.degreeDesc}>
-                            Graduated Cum Laude. Specialization in Software Engineering and Data Structures.
-                            Completed Capstone Project on AI-driven Accessibility Tools.
-                            Dean's List 2020-2022.
+                            Tudo que aprendi vem de cursos, projetos e experiência prática.
+                            Trabalhei para algumas pessoas e algumas empresas ao longo dos anos.
+                            Isso me permitiu adquirir um bom conhecimento teórico e prático.
                         </p>
                     </SpotlightCard>
                 </div>

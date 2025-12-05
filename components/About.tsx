@@ -1,6 +1,8 @@
+import Image from 'next/image';
 import styles from './About.module.css';
 import Particles from './effects/particles';
 import { Octokit } from "@octokit/core";
+import myImage from "../public/q-fofin.png";
 
 async function getRepoCount() {
     try {
@@ -44,9 +46,19 @@ export default async function About() {
                         <div className={styles.profileFrame}>
                             <div className={styles.glitchText}>MF-2025</div>
                             {/* Placeholder for actual image or 3D avatar */}
-                            <div style={{ color: 'var(--accent-cyan)', fontFamily: 'var(--font-geist-mono)' }}>
+                            <div style={{ color: 'var(--accent-cyan)', fontFamily: 'var(--font-geist-mono)', zIndex: 3 }}>
                                 [SYSTEM_ONLINE]
                             </div>
+                            <Image src={myImage} alt="Profile"
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    position: 'absolute',
+                                    inset: '0',
+                                    objectPosition: '0% 70%',
+                                }}
+                            />
                         </div>
                     </div>
 
