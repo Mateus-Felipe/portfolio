@@ -1,0 +1,187 @@
+.section {
+    padding: var(--spacing-xl) 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+    background: linear-gradient(to right, #fff 0%, var(--text-secondary) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subheading {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xl);
+    font-size: 1.1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-md);
+}
+
+/* Desktop: 2 Columns */
+@media (min-width: 968px) {
+    .container {
+        grid-template-columns: 2fr 3fr;
+        gap: var(--spacing-xl);
+        align-items: start;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.columnTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Degree Card (Big) */
+.degreeCard {
+    position: relative;
+    border-radius: 16px;
+    background-color: var(--bg-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    padding: var(--spacing-lg);
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.degreeIcon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--accent-purple);
+    background: rgba(189, 0, 255, 0.1);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.degreeTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.degreeSchool {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.degreeYear {
+    font-size: 1rem;
+    color: var(--accent-cyan);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+}
+
+.degreeDesc {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Certifications Grid (Small) */
+.certGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.certCard {
+    position: relative;
+    border-radius: 12px;
+    background-color: var(--bg-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    transition: transform var(--transition-fast);
+}
+
+.certCard:hover {
+    transform: translateY(-4px);
+}
+
+.certContent {
+    position: relative;
+    z-index: 2;
+}
+
+.certHeader {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.certIcon {
+    font-size: 1.5rem;
+    color: var(--accent-cyan);
+    background: rgba(0, 243, 255, 0.1);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.certName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.certIssuer {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.certDate {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
+/* Spotlight Effect specific */
+.spotlight {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%),
+            var(--spotlight-color, rgba(255, 255, 255, 0.1)) 0%,
+            transparent 80%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.certCard:hover .spotlight,
+.degreeCard:hover .spotlight {
+    opacity: 1;
+}
