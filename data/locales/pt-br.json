@@ -1,0 +1,98 @@
+{
+    "navbar": {
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contato"
+    },
+    "hero": {
+        "title": "MATEUS FELIPE",
+        "subtitle": "DESENVOLVEDOR FULL-STACK",
+        "cta": "Ver Projetos"
+    },
+    "about": {
+        "heading": "Por trás do Código",
+        "system_online": "[SISTEMA_ONLINE]",
+        "bio": "Sou Mateus Felipe, um Desenvolvedor Full-Stack criando experiências digitais desde 2019. Nascido na era digital (2007), uno a inovação jovem com robusta expertise técnica. Minha missão é construir sistemas que não sejam apenas funcionais, mas obras de arte.",
+        "stats": {
+            "years": "Anos de Experiência",
+            "projects": "Projetos Concluídos",
+            "specialization": "Especialização",
+            "specialization_val": "Full-Stack",
+            "clients": "Base de Clientes",
+            "clients_val": "Global"
+        }
+    },
+    "skills": {
+        "heading": "Arsenal Técnico",
+        "categories": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Banco de Dados",
+            "devops": "DevOps & Cloud",
+            "security": "Segurança & Outros"
+        }
+    },
+    "projects": {
+        "heading": "Trabalhos Selecionados",
+        "p1": {
+            "title": "Plataforma E-Commerce",
+            "desc": "Loja online de alta performance construída com Next.js e integração Stripe."
+        },
+        "p2": {
+            "title": "Dashboard IA",
+            "desc": "Painel analítico impulsionado por modelos de machine learning para visualização de dados em tempo real."
+        },
+        "p3": {
+            "title": "App Rede Social",
+            "desc": "Plataforma social mobile-first com mensagens em tempo real e compartilhamento de mídia."
+        }
+    },
+    "timeline": {
+        "heading": "Minha Jornada Profissional",
+        "subheading": "Uma linha do tempo das minhas principais experiências, projetos e marcos.",
+        "t1": {
+            "title": "Engenheiro de Software Sênior",
+            "desc": "Liderando o desenvolvimento de aplicações web escaláveis, mentorando engenheiros júnior e definindo decisões arquiteturais para produtos de próxima geração."
+        },
+        "t2": {
+            "title": "Líder no Projeto Phoenix",
+            "desc": "Desenvolvi e lancei uma aplicação SaaS full-stack para gerenciamento de projetos, utilizando React, Node.js e PostgreSQL."
+        },
+        "t3": {
+            "title": "Engenheiro de Software",
+            "desc": "Contribuí para funcionalidades centrais do produto, melhorando a performance da aplicação em 20% e participando de um ciclo de desenvolvimento ágil completo."
+        },
+        "t4": {
+            "title": "Bacharel em Ciência da Computação",
+            "desc": "Graduado com honras. Foco em algoritmos, estruturas de dados e princípios de engenharia de software. Presidente do Clube de Codificação."
+        }
+    },
+    "education": {
+        "heading": "Educação e Certificações",
+        "subheading": "Destreza acadêmica e habilidades empresariais validadas.",
+        "degree": {
+            "title": "Grau Acadêmico",
+            "name": "Faculdade Aprendi na Marra",
+            "school": "Mas irei cursar Ciências da Computação",
+            "desc": "Tudo que aprendi vem de cursos, projetos e experiência prática. Trabalhei para algumas pessoas e algumas empresas ao longo dos anos. Isso me permitiu adquirir um bom conhecimento teórico e prático."
+        },
+        "certs": {
+            "title": "Certificações e Cursos"
+        }
+    },
+    "contact": {
+        "heading": "Inicializar Conexão",
+        "subtext": "Pronto para construir algo extraordinário? Envie um sinal.",
+        "form": {
+            "name": "Nome",
+            "email": "Email",
+            "message": "Mensagem",
+            "button": "Transmitir Mensagem"
+        },
+        "modal": {
+            "title": "Sobrescrita de Sistema!",
+            "text": "Ops, eu ainda não fiz essa funcionalidade 😅 Mas ei, você pode me contatar <strong>(ou pegar meu e-mail)</strong> via LinkedIn. É mais rápido que a velocidade da luz! 🚀",
+            "link": "Conectar no LinkedIn"
+        }
+    }
+}

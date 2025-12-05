@@ -48,17 +48,21 @@ const certifications: Certificate[] = [
     }
 ];
 
+import { useLanguage } from '../context/LanguageContext';
+
 export default function Education() {
+    const { t } = useLanguage();
+
     return (
         <section className={styles.section} id="education">
-            <h2 className={styles.heading}>Education & Certifications</h2>
-            <p className={styles.subheading}>Academic prowess and validated enterprise skills.</p>
+            <h2 className={styles.heading}>{t('education.heading')}</h2>
+            <p className={styles.subheading}>{t('education.subheading')}</p>
 
             <div className={styles.container}>
                 {/* Column 1: Academic Degree */}
                 <div className={styles.column}>
                     <div className={styles.columnTitle}>
-                        <span>Academic Degree</span>
+                        <span>{t('education.degree.title')}</span>
                     </div>
                     <SpotlightCard
                         className={styles.degreeCard}
@@ -67,13 +71,11 @@ export default function Education() {
                         <div className={styles.degreeIcon}>
                             🎓
                         </div>
-                        <h3 className={styles.degreeTitle}>Faculdade <i>Aprendi na Marra</i></h3>
-                        <div className={styles.degreeSchool}>Mas irei cursar Ciências da Computação</div>
+                        <h3 className={styles.degreeTitle}>{t('education.degree.name')}</h3>
+                        <div className={styles.degreeSchool}>{t('education.degree.school')}</div>
                         <div className={styles.degreeYear}>2019 - 2025+</div>
                         <p className={styles.degreeDesc}>
-                            Tudo que aprendi vem de cursos, projetos e experiência prática.
-                            Trabalhei para algumas pessoas e algumas empresas ao longo dos anos.
-                            Isso me permitiu adquirir um bom conhecimento teórico e prático.
+                            {t('education.degree.desc')}
                         </p>
                     </SpotlightCard>
                 </div>
@@ -81,7 +83,7 @@ export default function Education() {
                 {/* Column 2: Certifications */}
                 <div className={styles.column}>
                     <div className={styles.columnTitle}>
-                        <span>Certifications & Courses</span>
+                        <span>{t('education.certs.title')}</span>
                     </div>
                     <div className={styles.certGrid}>
                         {certifications.map((cert) => (

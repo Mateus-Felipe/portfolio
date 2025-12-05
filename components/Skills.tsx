@@ -1,36 +1,39 @@
 'use client';
 import SpotlightCard from './effects/spotlight_card';
 import styles from './Skills.module.css';
+import { useLanguage } from '../context/LanguageContext';
 
 const skillCategories = [
     {
-        title: "Frontend",
+        titleKey: "skills.categories.frontend",
         icon: "FE",
         skills: ["JavaScript", "TypeScript", "Next.js", "React.js", "Tailwind CSS", "Shadcn UI"]
     },
     {
-        title: "Backend",
+        titleKey: "skills.categories.backend",
         icon: "BE",
         skills: ["Node.js", "Express.js", "PHP", "Laravel", "C#", ".NET Core"]
     },
     {
-        title: "Database",
+        titleKey: "skills.categories.database",
         icon: "DB",
         skills: ["MongoDB", "PostgreSQL", "MySQL", "PrismaORM", "Mongoose"]
     },
     {
-        title: "DevOps & Cloud",
+        titleKey: "skills.categories.devops",
         icon: "CL",
         skills: ["AWS", "Vercel", "Docker", "Git", "CI/CD", "Linux VPS"]
     },
     {
-        title: "Security & Others",
+        titleKey: "skills.categories.security",
         icon: "SE",
         skills: ["Cybersecurity", "Penetration Testing", "Networking", "IoT", "SEO"]
     }
 ];
 
 export default function Skills() {
+    const { t } = useLanguage();
+
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
         const card = e.currentTarget;
         const rect = card.getBoundingClientRect();
@@ -43,11 +46,11 @@ export default function Skills() {
 
     return (
         <section className={styles.section} id="skills">
-            <h2 className={styles.heading}>Technical Arsenal</h2>
+            <h2 className={styles.heading}>{t('skills.heading')}</h2>
             <div className={styles.grid}>
                 {skillCategories.map((category) => (
                     <SpotlightCard
-                        key={category.title}
+                        key={category.titleKey}
                         className={styles.card}
                         spotlightColor="rgba(54, 22, 74, 1)"
                         onMouseMove={handleMouseMove}
@@ -56,7 +59,7 @@ export default function Skills() {
                         <div className={styles.cardContent}>
                             <div className={styles.cardHeader}>
                                 <div className={styles.icon}>{category.icon}</div>
-                                <h3 className={styles.category}>{category.title}</h3>
+                                <h3 className={styles.category}>{t(category.titleKey)}</h3>
                             </div>
                             <div className={styles.list}>
                                 {category.skills.map((skill) => (

@@ -1,46 +1,51 @@
+'use client';
+
 import styles from './Timeline.module.css';
+import { useLanguage } from '../context/LanguageContext';
 
 const timelineData = [
     {
-        title: "Senior Software Engineer",
+        titleKey: "timeline.t1.title",
         company: "Tech Solutions Inc.",
         year: "2022 - Present",
-        description: "Leading development of scalable web applications, mentoring junior engineers, and driving architectural decisions for next-gen products."
+        descKey: "timeline.t1.desc"
     },
     {
-        title: "Lead on Project Phoenix",
+        titleKey: "timeline.t2.title",
         company: "Side Project",
         year: "2021",
-        description: "Developed and launched a full-stack SaaS application for project management, utilizing React, Node.js, and PostgreSQL."
+        descKey: "timeline.t2.desc"
     },
     {
-        title: "Software Engineer",
+        titleKey: "timeline.t3.title",
         company: "Innovate Corp.",
         year: "2020 - 2022",
-        description: "Contributed to core product features, improving application performance by 20% and participating in a full agile development lifecycle."
+        descKey: "timeline.t3.desc"
     },
     {
-        title: "B.S. in Computer Science",
+        titleKey: "timeline.t4.title",
         company: "State University",
         year: "2016 - 2020",
-        description: "Graduated with honors. Focused on algorithms, data structures, and software engineering principles. President of the Coding Club."
+        descKey: "timeline.t4.desc"
     }
 ];
 
 export default function Timeline() {
+    const { t } = useLanguage();
+
     return (
         <section className={styles.section} id="timeline">
-            <h2 className={styles.heading}>My Professional Journey</h2>
-            <p className={styles.subheading}>A timeline of my key experiences, projects, and milestones.</p>
+            <h2 className={styles.heading}>{t('timeline.heading')}</h2>
+            <p className={styles.subheading}>{t('timeline.subheading')}</p>
 
             <div className={styles.timeline}>
                 {timelineData.map((item, index) => (
                     <div key={index} className={`${styles.container} ${index % 2 === 0 ? styles.left : styles.right}`}>
                         <div className={styles.dot}></div>
                         <div className={styles.content}>
-                            <h3 className={styles.title}>{item.title}</h3>
+                            <h3 className={styles.title}>{t(item.titleKey)}</h3>
                             <span className={styles.date}>{item.company} | <span>{item.year}</span></span>
-                            <p className={styles.description}>{item.description}</p>
+                            <p className={styles.description}>{t(item.descKey)}</p>
                         </div>
                     </div>
                 ))}

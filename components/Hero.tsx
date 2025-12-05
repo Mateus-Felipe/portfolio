@@ -1,8 +1,14 @@
+'use client';
+
 import DarkVeil from './effects/dark_veil';
 import Particles from './effects/particles';
 import styles from './Hero.module.css';
 
+import { useLanguage } from '../context/LanguageContext';
+
 export default function Hero() {
+    const { t } = useLanguage();
+
     return (
         <section className={styles.hero}>
             <DarkVeil />
@@ -10,9 +16,9 @@ export default function Hero() {
             <div className={styles.grid}></div>
             <div className={styles.content}>
 
-                <h1 className={styles.title}>MATEUS FELIPE</h1>
-                <p className={styles.subtitle}>FULL-STACK DEVELOPER</p>
-                <button className={styles.cta}>View Projects</button>
+                <h1 className={styles.title}>{t('hero.title')}</h1>
+                <p className={styles.subtitle}>{t('hero.subtitle')}</p>
+                <button className={styles.cta}>{t('hero.cta')}</button>
             </div>
         </section>
     );

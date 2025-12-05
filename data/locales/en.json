@@ -1,0 +1,98 @@
+{
+    "navbar": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "MATEUS FELIPE",
+        "subtitle": "FULL-STACK DEVELOPER",
+        "cta": "View Projects"
+    },
+    "about": {
+        "heading": "Behind the Code",
+        "system_online": "[SYSTEM_ONLINE]",
+        "bio": "I am Mateus Felipe, a Full-Stack Developer crafting digital experiences since 2019. Born in the digital age (2007), I merge youthful innovation with robust technical expertise. My mission is to build systems that are not just functional, but works of art.",
+        "stats": {
+            "years": "Years Experience",
+            "projects": "Projects Completed",
+            "specialization": "Specialization",
+            "specialization_val": "Full-Stack",
+            "clients": "Client Base",
+            "clients_val": "Global"
+        }
+    },
+    "skills": {
+        "heading": "Technical Arsenal",
+        "categories": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Database",
+            "devops": "DevOps & Cloud",
+            "security": "Security & Others"
+        }
+    },
+    "projects": {
+        "heading": "Selected Works",
+        "p1": {
+            "title": "E-Commerce Platform",
+            "desc": "A high-performance online store built with Next.js and Stripe integration."
+        },
+        "p2": {
+            "title": "AI Dashboard",
+            "desc": "Analytics dashboard powered by machine learning models for real-time data visualization."
+        },
+        "p3": {
+            "title": "Social Network App",
+            "desc": "Mobile-first social platform with real-time messaging and media sharing."
+        }
+    },
+    "timeline": {
+        "heading": "My Professional Journey",
+        "subheading": "A timeline of my key experiences, projects, and milestones.",
+        "t1": {
+            "title": "Senior Software Engineer",
+            "desc": "Leading development of scalable web applications, mentoring junior engineers, and driving architectural decisions for next-gen products."
+        },
+        "t2": {
+            "title": "Lead on Project Phoenix",
+            "desc": "Developed and launched a full-stack SaaS application for project management, utilizing React, Node.js, and PostgreSQL."
+        },
+        "t3": {
+            "title": "Software Engineer",
+            "desc": "Contributed to core product features, improving application performance by 20% and participating in a full agile development lifecycle."
+        },
+        "t4": {
+            "title": "B.S. in Computer Science",
+            "desc": "Graduated with honors. Focused on algorithms, data structures, and software engineering principles. President of the Coding Club."
+        }
+    },
+    "education": {
+        "heading": "Education & Certifications",
+        "subheading": "Academic prowess and validated enterprise skills.",
+        "degree": {
+            "title": "Academic Degree",
+            "name": "College Learned the Hard Way",
+            "school": "But I will study Computer Science",
+            "desc": "Everything I learned comes from courses, projects, and practical experience. I worked for several people and companies over the years. This allowed me to acquire good theoretical and practical knowledge."
+        },
+        "certs": {
+            "title": "Certifications & Courses"
+        }
+    },
+    "contact": {
+        "heading": "Initialize Connection",
+        "subtext": "Ready to build something extraordinary? Send a signal.",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "button": "Transmit Message"
+        },
+        "modal": {
+            "title": "System Override!",
+            "text": "Ops, I didn't make this feature yet 😅 But hey, you can contact me <strong>(or get my e-mail)</strong> via LinkedIn. It's faster than the light speed! 🚀",
+            "link": "Connect on LinkedIn"
+        }
+    }
+}
