@@ -1,7 +1,6 @@
 .section {
     padding: var(--spacing-xl) var(--spacing-lg);
     background-color: var(--bg-primary);
-    position: relative;
     overflow: hidden;
 }
 

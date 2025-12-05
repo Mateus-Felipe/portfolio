@@ -2,6 +2,7 @@
 
 import styles from './Timeline.module.css';
 import { useLanguage } from '../context/LanguageContext';
+import DecryptedText from './effects/DecryptedText';
 
 const timelineData = [
     {
@@ -35,7 +36,13 @@ export default function Timeline() {
 
     return (
         <section className={styles.section} id="timeline">
-            <h2 className={styles.heading}>{t('timeline.heading')}</h2>
+            <h2 className={styles.heading}>
+                <DecryptedText
+                    text={t('timeline.heading')}
+                    speed={50}
+                    animateOnScroll={true}
+                />
+            </h2>
             <p className={styles.subheading}>{t('timeline.subheading')}</p>
 
             <div className={styles.timeline}>

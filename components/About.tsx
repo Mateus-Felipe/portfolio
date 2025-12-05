@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import styles from './About.module.css';
 import Particles from './effects/particles';
+import DecryptedText from './effects/DecryptedText';
 import myImage from "../public/q-fofin.png";
 import { useLanguage } from '../context/LanguageContext';
 
@@ -36,9 +37,15 @@ export default function About({ projectCount }: { projectCount: number }) {
                     </div>
 
                     <div className={styles.content}>
-                        <h2 className={styles.heading}>{t('about.heading')}</h2>
+                        <h2 className={styles.heading}>
+                            <DecryptedText text={t('about.heading')} speed={150} animateOnScroll={true} />
+                        </h2>
                         <p className={styles.bio}>
-                            {t('about.bio')}
+                            <DecryptedText
+                                text={t('about.bio')}
+                                speed={8}
+                                animateOnScroll={true}
+                            />
                         </p>
 
                         <div className={styles.statGrid}>

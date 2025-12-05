@@ -2,6 +2,7 @@
 
 import styles from './Projects.module.css';
 import { useLanguage } from '../context/LanguageContext';
+import DecryptedText from './effects/DecryptedText';
 
 const projects = [
     {
@@ -29,7 +30,13 @@ export default function Projects() {
 
     return (
         <section className={styles.section} id="projects">
-            <h2 className={styles.heading}>{t('projects.heading')}</h2>
+            <h2 className={styles.heading}>
+                <DecryptedText
+                    text={t('projects.heading')}
+                    speed={50}
+                    animateOnScroll={true}
+                />
+            </h2>
             <div className={styles.grid}>
                 {projects.map((project) => (
                     <div key={project.id} className={styles.card}>

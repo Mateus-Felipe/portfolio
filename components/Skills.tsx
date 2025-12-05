@@ -2,6 +2,7 @@
 import SpotlightCard from './effects/spotlight_card';
 import styles from './Skills.module.css';
 import { useLanguage } from '../context/LanguageContext';
+import DecryptedText from './effects/DecryptedText';
 
 const skillCategories = [
     {
@@ -46,7 +47,13 @@ export default function Skills() {
 
     return (
         <section className={styles.section} id="skills">
-            <h2 className={styles.heading}>{t('skills.heading')}</h2>
+            <h2 className={styles.heading}>
+                <DecryptedText
+                    text={t('skills.heading')}
+                    speed={50}
+                    animateOnScroll={true}
+                />
+            </h2>
             <div className={styles.grid}>
                 {skillCategories.map((category) => (
                     <SpotlightCard

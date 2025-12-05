@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import styles from './Contact.module.css';
 import { useLanguage } from '../context/LanguageContext';
+import DecryptedText from './effects/DecryptedText';
 
 export default function Contact() {
     const { t } = useLanguage();
@@ -16,7 +17,11 @@ export default function Contact() {
         <section className={styles.section} id="contact">
             <div className={styles.container}>
                 <h2 className={styles.heading} onClick={handleInteraction} style={{ cursor: 'pointer' }}>
-                    {t('contact.heading')}
+                    <DecryptedText
+                        text={t('contact.heading')}
+                        speed={50}
+                        animateOnScroll={true}
+                    />
                 </h2>
                 <p className={styles.subtext}>
                     {t('contact.subtext')}
