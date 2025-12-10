@@ -27,6 +27,7 @@
         "categories": {
             "frontend": "Frontend",
             "backend": "Backend",
+            "mobile": "Mobile",
             "database": "Banco de Dados",
             "devops": "DevOps & Cloud",
             "security": "Segurança & Outros"
@@ -35,16 +36,28 @@
     "projects": {
         "heading": "Trabalhos Selecionados",
         "p1": {
-            "title": "Plataforma E-Commerce",
-            "desc": "Loja online de alta performance construída com Next.js e integração Stripe."
+            "title": "Sistema de Estoque",
+            "desc": "Sistema de estoque para gestão de produtos e almoxarifados, feito para uma universidade. Utilizei React.js, Node.js, Electron.js e Postgres."
         },
         "p2": {
-            "title": "Dashboard IA",
-            "desc": "Painel analítico impulsionado por modelos de machine learning para visualização de dados em tempo real."
+            "title": "Aprovados Club - Plataforma de estudos com IA",
+            "desc": "Uma plataforma de estudos estilo Google Notebook, integração com IA, criação de mapas mentais, audios de resumo, conversa com chat e histórico, organização em pastas e tags, gamificação."
         },
         "p3": {
-            "title": "App Rede Social",
-            "desc": "Plataforma social mobile-first com mensagens em tempo real e compartilhamento de mídia."
+            "title": "Sistema de agendamento de hospedagem para Hotel",
+            "desc": "Um sistema para organização e estruturação de agendamentos de hospedagem para um hotel. Feito em Next.js, Node.js, MySQL e outras tecnologias."
+        },
+        "p4": {
+            "title": "Login Automotion Tool",
+            "desc": "Sistema de automoção de login para sites, feito para scrapers."
+        },
+        "p5": {
+            "title": "Papa Filas - Sistema de tickets de filas integrado a impressora",
+            "desc": "O sistema, para totem de retirada de ticket e atendentes, foi feito para uma universidade. Utilizei React.js com Electron.js, Node.js e Postgres. O sistema foi integrado a uma impressora EPSON TM-T20X para impressão de tickets."
+        },
+        "p6": {
+            "title": "Sistema para garotas acompanhantes",
+            "desc": "Um sistema similar ao Fatal Model e Photo Acompanhante. Totalmente funcional, com envio de fotos, chat, pagamento para 'anúncio' e etc. Feito em Next.js, Node.Js e Postgres."
         }
     },
     "timeline": {

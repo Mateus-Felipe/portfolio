@@ -27,6 +27,7 @@
         "categories": {
             "frontend": "Frontend",
             "backend": "Backend",
+            "mobile": "Mobile",
             "database": "Database",
             "devops": "DevOps & Cloud",
             "security": "Security & Others"
@@ -35,16 +36,28 @@
     "projects": {
         "heading": "Selected Works",
         "p1": {
-            "title": "E-Commerce Platform",
-            "desc": "A high-performance online store built with Next.js and Stripe integration."
+            "title": "Inventory System",
+            "desc": "Inventory system for product and warehouse management, built for a university. I used React.js, Node.js, Electron.js, and Postgres."
         },
         "p2": {
-            "title": "AI Dashboard",
-            "desc": "Analytics dashboard powered by machine learning models for real-time data visualization."
+            "title": "Aprovados Club - AI-powered Study Platform",
+            "desc": "A Google Notebook-style study platform, AI integration, mind map creation, summary audios, chat conversation and history, organization in folders and tags, gamification."
         },
         "p3": {
-            "title": "Social Network App",
-            "desc": "Mobile-first social platform with real-time messaging and media sharing."
+            "title": "Hotel Booking Scheduling System",
+            "desc": "A system for organizing and structuring accommodation bookings for a hotel. Built with Next.js, Node.js, MySQL, and other technologies."
+        },
+        "p4": {
+            "title": "Login Automation Tool",
+            "desc": "Login automation system for websites, made for scrapers."
+        },
+        "p5": {
+            "title": "Papa Filas - Queue Ticket System integrated with a Printer",
+            "desc": "The system, for ticket withdrawal totem and attendants, was built for a university. I used React.js with Electron.js, Node.js, and Postgres. The system was integrated with an EPSON TM-T20X printer for ticket printing."
+        },
+        "p6": {
+            "title": "System for Escort Girls",
+            "desc": "A system similar to Fatal Model and Photo Acompanhante. Fully functional, with photo uploading, chat, payment for 'ads', and so on. Built with Next.js, Node.Js, and Postgres."
         }
     },
     "timeline": {

@@ -9,20 +9,38 @@ const projects = [
         id: 1,
         titleKey: "projects.p1.title",
         descKey: "projects.p1.desc",
-        tags: ["Next.js", "TypeScript", "Stripe"]
+        tags: ["React.js", "TypeScript", "Node.Js", "Electron.js", "Postgres"]
     },
     {
         id: 2,
         titleKey: "projects.p2.title",
         descKey: "projects.p2.desc",
-        tags: ["React", "Python", "D3.js"]
+        tags: ["Next.js", "Node.js", "Postgres", "Gemini", "OpenAI"]
     },
     {
         id: 3,
         titleKey: "projects.p3.title",
         descKey: "projects.p3.desc",
-        tags: ["React Native", "Firebase", "Redux"]
-    }
+        tags: ["Next.js", "Typescript", "Node.js", "Electron.js", "MySQL"]
+    },
+    {
+        id: 4,
+        titleKey: "projects.p4.title",
+        descKey: "projects.p4.desc",
+        tags: ["Python"]
+    },
+    {
+        id: 5,
+        titleKey: "projects.p5.title",
+        descKey: "projects.p5.desc",
+        tags: ["React Native", "Typescript", "Electron.js", "Node.js", "Postgres"]
+    },
+    {
+        id: 6,
+        titleKey: "projects.p6.title",
+        descKey: "projects.p6.desc",
+        tags: ["Next.js", "Typescript", "Node.js", "Postgres"]
+    },
 ];
 
 export default function Projects() {

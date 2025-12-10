@@ -16,6 +16,11 @@ const skillCategories = [
         skills: ["Node.js", "Express.js", "PHP", "Laravel", "C#", ".NET Core"]
     },
     {
+        titleKey: "skills.categories.mobile",
+        icon: "MO",
+        skills: ["React Native", "Expo"]
+    },
+    {
         titleKey: "skills.categories.database",
         icon: "DB",
         skills: ["MongoDB", "PostgreSQL", "MySQL", "PrismaORM", "Mongoose"]
